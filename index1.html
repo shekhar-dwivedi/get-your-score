@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Get Your Score</h1>
+        <div class="calculator">
+    <table id="calc">
+          <tr>
+            <td colspan="4"> <input class="display-box" type="text" id="result" disabled /> </td>
+          </tr>
+        <tr>
+            <td><input class="ipbtn1" type="button" value="7" onclick="disp('7')"/></td>
+            <td><input class="ipbtn2" type="button" value="8" onclick="disp('8')"/></td>
+            <td><input class="ipbtn3" type="button" value="9" onclick="disp('9')"/></td>
+            <td><input class="ipbtn4 operator" type="button" value="+" onclick="disp('+')"/></td>
+        </tr>
+        <tr>
+            <td><input class="ipbtn1" type="button" value="4" onclick="disp('4')"/></td>
+            <td><input class="ipbtn2" type="button" value="5" onclick="disp('5')"/></td>
+            <td><input class="ipbtn3" type="button" value="6" onclick="disp('6')"/></td>
+            <td><input class="ipbtn4 operator" type="button" value="-" onclick="disp('-')"/></td>
+        </tr>
+        <tr>
+            <td><input class="ipbtn1" type="button" value="1" onclick="disp('1')"/></td>
+            <td><input class="ipbtn2" type="button" value="2" onclick="disp('2')"/></td>
+            <td><input class="ipbtn3" type="button" value="3" onclick="disp('3')"/></td>
+            <td><input class="ipbtn4 operator" type="button" value="x" onclick="disp('*')"/></td>
+        </tr>
+        <tr>
+            <td><input class="ipbtn1 back" type="button" value="" onclick="bkspc()"/></td>
+            <td><input class="ipbtn2" type="button" value="0" onclick="disp('0')"/></td>
+            <td><input class="ipbtn3" type="button" value="." onclick="disp('.')"/></td>
+            <td><input class="ipbtn4 operator" type="button" value="/" onclick="disp('/')"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="ipbtn5" id="equalsto" type="button" value="=" onclick="cal()"/></td>
+            <td colspan="2"> <input class="ipbtn0" type="button" value="A.C" onclick="clrsc()" id="btn" /> </td>
+        </tr>
+    </table>
+</div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
